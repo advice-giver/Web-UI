@@ -168,6 +168,26 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.testing {
-  color: red;
+#aboutus {
+  font-size: 3rem;
+}
+.missionsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: #e6fff2;
+}
+.ourmission {
+  border: 1px solid black;
+  padding: 2rem;
+  background-color: white;
+  color: black;
+}
+.missionheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
