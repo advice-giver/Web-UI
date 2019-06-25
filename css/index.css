@@ -103,6 +103,7 @@ i {
   width: 6rem;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
+  border-radius: 50%;
 }
 .column {
   display: flex;
@@ -112,4 +113,7 @@ i {
 }
 .thirdsection {
   background-color: lavender;
+}
+.img #imgcircle {
+  border-radius: 50%;
 }
