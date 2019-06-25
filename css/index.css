@@ -26,27 +26,28 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  background-color: black;
 }
 .nav-item1 {
   text-decoration: none;
-  color: black;
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 .nav-item2 {
   text-decoration: none;
-  color: black;
+  color: white;
   margin: 20%;
 }
 .nav-item3 {
   text-decoration: none;
-  color: black;
+  color: white;
   margin: 20%;
 }
 .nav-item4 {
   text-decoration: none;
-  color: black;
+  color: white;
   margin: 20%;
 }
 .navbar {
@@ -126,4 +127,8 @@ footer {
 .footerdiv {
   display: flex;
   flex-direction: column;
+}
+.adviceheader {
+  height: 10rem;
+  width: 10rem;
 }
