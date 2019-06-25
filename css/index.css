@@ -65,7 +65,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 3%;
 }
 i {
   border: solid black;
@@ -88,6 +87,7 @@ i {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 3%;
   width: 100%;
 }
 .whyuse {
