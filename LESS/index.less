@@ -5,12 +5,6 @@
 
 @import './Contact/contact.less';
 
-html {
-	background-color: white;
-
-}
-
-
 /* Container holding the image and the text */
 .topsection {
 	position: relative;
@@ -18,38 +12,78 @@ html {
 	color: white;
   }
   
-  /* Bottom left text */
-  .bottom-left {
-	position: absolute;
-	bottom: 2rem;
-	left: 4rem;
-  }
-  
-  /* Top left text */
-  .top-left {
-	position: absolute;
-	top: 2rem;
-	left: 4rem;
-  }
-  
-  /* Top right text */
-  .top-right {
-	position: absolute;
-	top: 2rem;
-	right: 4rem;
-  }
-  
-  /* Bottom right text */
-  .bottom-right {
-	position: absolute;
-	bottom: 2rem;
-	right: 4rem;
-  }
-  
-  /* Centered text */
   .centered {
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-  }
+	font-size: 2rem;
+	}
+
+	.centeredbutton {
+		position: absolute;
+		top: 65%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		
+
+
+		}
+
+	.topimage {
+		height: 20rem;
+		width: 100%
+	}
+
+
+	.header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+// Advice Giver Header 
+	.nav-item1 {
+		text-decoration: none;
+		color: black;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+// About tab 
+	.nav-item2 {
+		text-decoration: none;
+		color: black;
+		margin: 20%;
+	}
+
+// Contact tab 
+	.nav-item3 {
+		text-decoration: none;
+		color: black;
+		margin: 20%
+	}
+
+	.nav-item4 {
+		text-decoration: none;
+		color: black;
+		margin: 20%
+	}
+
+	.navbar {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+
+.howdoesitworkheader {
+	margin-top: 5%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
