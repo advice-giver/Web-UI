@@ -1,26 +1,14 @@
-/* Container holding the image and the text */
-.topsection {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
-}
-.topimage {
-  height: 20rem;
-  width: 100%;
-}
+/* Header and NavBar */
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   background-color: black;
+}
+.adviceheader {
+  height: 10rem;
+  width: 10rem;
 }
 .nav-item1 {
   text-decoration: none;
@@ -49,16 +37,33 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.box {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  border: 1px solid black;
-  background-color: lavender;
-  padding: 1.5%;
-  margin: auto;
-  width: 50%;
+/* Top Section */
+.topsection {
+  position: relative;
+  text-align: center;
+  color: white;
 }
+.topimage {
+  height: 20rem;
+  width: 100%;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+/* Buttons for top section and footer */
+button {
+  border: 1px solid white;
+  height: 2rem;
+  width: 10rem;
+  color: #33cccc;
+  background-color: black;
+  font-size: 14px;
+}
+/* 2nd Section */
 .sectionheader {
   font-size: 1.5rem;
   display: flex;
@@ -66,6 +71,7 @@
   justify-content: center;
   align-items: center;
 }
+/* Arrows in 2nd section */
 i {
   border: solid black;
   border-width: 0rem 0.5rem 0.5rem 0rem;
@@ -82,14 +88,7 @@ i {
   justify-content: center;
   align-items: center;
 }
-.whyuseheader {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 3%;
-  width: 100%;
-}
+/* For 2nd, 3rd, and 4th section */
 .img {
   height: 6rem;
   width: 6rem;
@@ -103,38 +102,24 @@ i {
   justify-content: center;
   align-items: center;
 }
-.thirdsection {
-  background-color: #e6fff2;
-}
-.img #imgcircle {
-  border-radius: 50%;
-}
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.footerdiv {
-  display: flex;
-  flex-direction: column;
-}
-.adviceheader {
-  height: 10rem;
-  width: 10rem;
-}
-button {
-  border: 1px solid white;
-  height: 2rem;
-  width: 10rem;
-  color: #33cccc;
-  background-color: black;
-  font-size: 14px;
-}
 .whyuse {
   margin-left: 5%;
   margin-right: 5%;
 }
+/* Header for 3rd and 4th section */
+.whyuseheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3%;
+  width: 100%;
+}
+/*  3rd section */
+.thirdsection {
+  background-color: #e6fff2;
+}
+/*  4th section */
 #textborder {
   border: 1px solid black;
   padding: 10px;
@@ -144,6 +129,7 @@ button {
   height: 8rem;
   width: auto;
 }
+/* Footer section */
 footer {
   border-top: 1px solid black;
   background-color: #e6fff2;

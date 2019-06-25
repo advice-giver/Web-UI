@@ -1,212 +1,181 @@
+@import "./Home/home.less";
 
-@import './Home/home.less';
+@import "./About/about.less";
 
-@import './About/about.less';
+@import "./Contact/contact.less";
 
-@import './Contact/contact.less';
+/* Header and NavBar */
 
-/* Container holding the image and the text */
-.topsection {
-	position: relative;
-	text-align: center;
-	color: white;
-  }
-  
-  .centered {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 2rem;
-	}
-
-	.topimage {
-		height: 20rem;
-		width: 100%
-	}
-
-
-	.header {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
-		background-color: black;
-	}
-
-// Advice Giver Header 
-	.nav-item1 {
-		text-decoration: none;
-		color: white;
-
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-	}
-// About tab 
-	.nav-item2 {
-		text-decoration: none;
-		color: white;
-		margin: 20%;
-	}
-
-// Contact tab 
-	.nav-item3 {
-		text-decoration: none;
-		color: white;
-		margin: 20%
-	}
-
-	.nav-item4 {
-		text-decoration: none;
-		color: white;
-		margin: 20%
-	}
-
-	.navbar {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	// Second section
-
-	.box 
-{
-  flex: 1;
+.header {
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
-  background-color: lavender;
-  padding: 1.5%;
-  margin: auto;
-  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
 }
 
-.sectionheader 
-{
-font-size: 1.5rem;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-
+.adviceheader {
+  height: 10rem;
+  width: 10rem;
 }
+
+.nav-item1 {
+  text-decoration: none;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav-item2 {
+  text-decoration: none;
+  color: white;
+  margin: 20%;
+}
+.nav-item3 {
+  text-decoration: none;
+  color: white;
+  margin: 20%;
+}
+
+.nav-item4 {
+  text-decoration: none;
+  color: white;
+  margin: 20%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Top Section */
+.topsection {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.topimage {
+  height: 20rem;
+  width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+/* Buttons for top section and footer */
+button {
+  border: 1px solid white;
+  height: 2rem;
+  width: 10rem;
+  color: #33cccc;
+  background-color: black;
+  font-size: 14px;
+}
+
+/* 2nd Section */
+
+.sectionheader {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Arrows in 2nd section */
 
 i {
-	border: solid black;
-	border-width: 0rem .5rem .5rem 0rem;
-	display: inline-block;
-	padding: .3rem;
-  }
-  
-  .down {
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-  }
+  border: solid black;
+  border-width: 0rem 0.5rem 0.5rem 0rem;
+  display: inline-block;
+  padding: 0.3rem;
+}
 
-  .arrow {
-	  display: flex;
-	  flex-direction: row;
-	  justify-content: center;
-	  align-items: center;
-  }
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
 
-  .whyuseheader {
-	  display: flex;
-	  flex-direction: row;
-	  justify-content: space-evenly;
-	  align-items: center;
-	  margin-top: 3%;
+.arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
-	  width: 100%
-  }
+/* For 2nd, 3rd, and 4th section */
+.img {
+  height: 6rem;
+  width: 6rem;
 
-  .img {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 
-	  height: 6rem;
-	  width: 6rem;
+  border-radius: 50%;
+}
 
-	margin-bottom: 1.5rem;
-	margin-top: 1.5rem;
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-	border-radius: 50%
-	
-  }
+.whyuse {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
-  .column {
-	  display: flex;
-	  flex-direction: column;
-	justify-content: center;
-	align-items: center;
-  }
+/* Header for 3rd and 4th section */
 
-  .thirdsection {
-	  background-color: #e6fff2;
-  }
+.whyuseheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3%;
 
-  .img #imgcircle
-  {
-	border-radius: 50%;
+  width: 100%;
+}
 
-  }
+/*  3rd section */
 
-  footer {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-  }
+.thirdsection {
+  background-color: #e6fff2;
+}
 
-  .footerdiv {
-	  display: flex;
-	  flex-direction: column;
-  }
+/*  4th section */
 
-  .adviceheader {
-height: 10rem;
-width: 10rem;
-  }
+#textborder {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #fff2e6;
+}
 
-  button {
-	border: 1px solid white;
-	height: 2rem;
-	width: 10rem;
-	color: #33cccc;
-	background-color: black;
-	font-size: 14px;
-	
+#circlepic {
+  height: 8rem;
+  width: auto;
+}
 
-  }
+/* Footer section */
 
-  .whyuse {
-	margin-left: 5%;
-	margin-right: 5%;
-	
-  }
-
-  #textborder {
-	  border: 1px solid black;
-	  padding: 10px;
-	  background-color: #fff2e6
-  }
-
-  #circlepic {
-	height: 8rem;
-	width: auto;
-  }
-
-  footer {
-	  border-top: 1px solid black;
-	  background-color: #e6fff2;
-  }
-  
+footer {
+  border-top: 1px solid black;
+  background-color: #e6fff2;
+}
 
 .footerdiv {
-	
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
