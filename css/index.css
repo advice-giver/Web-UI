@@ -6,16 +6,10 @@
 }
 .centered {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
-}
-.centeredbutton {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .topimage {
   height: 20rem;
@@ -113,7 +107,7 @@ i {
   align-items: center;
 }
 .thirdsection {
-  background-color: lavender;
+  background-color: #e6fff2;
 }
 .img #imgcircle {
   border-radius: 50%;
@@ -131,4 +125,12 @@ footer {
 .adviceheader {
   height: 10rem;
   width: 10rem;
+}
+button {
+  border: 1px solid white;
+  height: 2rem;
+  width: 10rem;
+  color: #33cccc;
+  background-color: black;
+  font-size: 14px;
 }
