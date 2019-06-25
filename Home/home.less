@@ -1,0 +1,203 @@
+/* Mobile Variable */
+
+@mobile: ~"(max-width: 500px)";
+
+/* Color Variable */
+
+@lightgreen: #e6fff2;
+
+/* Header and NavBar */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Advice Giver logo */
+.adviceheader {
+  height: 10rem;
+  width: 10rem;
+
+  @media @mobile {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  margin: 60%;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10%;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3%;
+  }
+}
+
+/* Top Section */
+.topsection {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.topimage {
+  height: 20rem;
+  width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+/* Buttons for top section and footer */
+button {
+  border: 1px solid white;
+  height: 2rem;
+  width: 10rem;
+  color: #33cccc;
+  background-color: black;
+  font-size: 14px;
+}
+
+/* 2nd Section */
+
+.sectionheader {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Arrows in 2nd section */
+
+i {
+  border: solid black;
+  border-width: 0rem 0.5rem 0.5rem 0rem;
+  display: inline-block;
+  padding: 0.3rem;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* For 2nd, 3rd, and 4th section */
+.img {
+  height: 6rem;
+  width: 6rem;
+
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+
+  border-radius: 50%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.whyuse {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Header for 3rd and 4th section */
+
+.whyuseheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3%;
+
+  width: 100%;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+/*  3rd section - Why Use Advice Giver */
+
+.thirdsection {
+  background-color: @lightgreen;
+}
+
+/*  4th section - How Weve Helped */
+
+#textborder {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #fff2e6;
+  width: 50%;
+}
+
+#circlepic {
+  height: 8rem;
+  width: auto;
+}
+
+/* Footer section */
+
+footer {
+  border-top: 1px solid black;
+  background-color: @lightgreen;
+}
+
+.footerdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
