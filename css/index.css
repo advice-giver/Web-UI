@@ -1,3 +1,5 @@
+/* Mobile Variable */
+/* Color Variable */
 /* Header and NavBar */
 .header {
   display: flex;
@@ -6,9 +8,22 @@
   align-items: center;
   background-color: black;
 }
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Advice Giver logo */
 .adviceheader {
   height: 10rem;
   width: 10rem;
+}
+@media (max-width: 500px) {
+  .adviceheader {
+    height: 15rem;
+    width: 15rem;
+  }
 }
 .nav-item {
   text-decoration: none;
@@ -16,12 +31,30 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 20%;
+  margin: 60%;
+}
+@media (max-width: 500px) {
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10%;
+  }
 }
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3%;
+  }
 }
 /* Top Section */
 .topsection {
@@ -101,7 +134,15 @@ i {
   margin-top: 3%;
   width: 100%;
 }
-/*  3rd section */
+@media (max-width: 500px) {
+  .whyuseheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+/*  3rd section - Why Use Advice Giver */
 .thirdsection {
   background-color: #e6fff2;
 }
