@@ -83,12 +83,17 @@ button {
   font-size: 14px;
 }
 /* 2nd Section */
-.sectionheader {
-  font-size: 1.5rem;
+.section2wrap {
+  border: 1px solid red;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: red;
+}
+.secondsection {
+  background-color: red;
 }
 /* Arrows in 2nd section */
 i {
@@ -108,6 +113,13 @@ i {
   align-items: center;
 }
 /* For 2nd, 3rd, and 4th section */
+.sectionheader {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .img {
   height: 6rem;
   width: 6rem;
@@ -181,7 +193,9 @@ footer {
 }
 .ourmission {
   border: 1px solid black;
-  padding: 2rem;
+  padding-bottom: 5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
   background-color: white;
   color: black;
 }
