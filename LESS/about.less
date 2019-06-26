@@ -12,6 +12,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  border-bottom: 1px solid black;
 
   @media @mobile {
     display: flex;
@@ -48,12 +49,15 @@
 // Third Section - Team 
 
 .teamparagraph {
-margin: 5%;
+margin-left: 5%;
+margin-right: 5%;
+margin-top: 2%;
 }
 
 .teamheader {
   display: flex;
   justify-content: center;
+  padding-top: 1%;
 }
 
 h3 {
@@ -79,6 +83,18 @@ h3 {
 
   padding-top: 3%;
   width: 100%;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 3;
+    margin-right: 3%;
+    
+  }
+
+  
 }
 
 
@@ -87,6 +103,19 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+
+  @media @mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+   padding-top: 2%;
+   padding-bottom: 2%;
+    
+}
+
 }
 
 i.fab {
@@ -96,7 +125,16 @@ i.fab {
 }
 
 p
-{font-size: 1rem;
-  
+{font-size: 1rem; }
+
+.personrole {
+  width: 100%;
+
+  @media @mobile{ 
+    display: flex;
+    flex-direction: column;
+   margin-left: 3%;
+    margin-right: 3%;
+  }
 }
 
