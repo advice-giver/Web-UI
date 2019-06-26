@@ -113,11 +113,11 @@ button {
 }
 /* 2nd Section */
 .section2wrap {
-  background-color: black;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 /* Arrows in 2nd section */
@@ -127,9 +127,9 @@ i {
   display: inline-block;
   padding: 0.3rem;
 }
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 .arrow {
   display: flex;
