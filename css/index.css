@@ -112,13 +112,26 @@ button {
   font-size: 14px;
 }
 /* 2nd Section */
-.section2wrap {
+.section2 {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .section2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 15rem;
 }
 /* Arrows in 2nd section */
 i {
@@ -130,6 +143,12 @@ i {
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+@media (max-width: 500px) {
+  .right {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
 }
 .arrow {
   display: flex;
