@@ -44,31 +44,18 @@ function changeHeader3() {
 header3.addEventListener("mouseover", changeHeader3);
 
 
-// Increase card size on mouseover 
+// Increase card size text on mouseover 
 
-let card = document.querySelector("#border");
-
-function changeCard() {
-  card.style.width = "75rem";
-  card.style.height= "20rem";
+let highlights = document.querySelectorAll("strong")
+function changeColor(highlight) {
+ highlight.style.backgroundColor = "yellow";
 }
 
-card.addEventListener("mouseover", changeCard);
 
-let card2 = document.querySelector(".border2");
+highlights.forEach(highlight => {
+ highlight.addEventListener('mouseenter', () => {
+    changeColor(highlight)
+  })
+})
 
-function changeCard2() {
-  card2.style.width = "75rem";
-  card2.style.height= "20rem";
-}
 
-card2.addEventListener("mouseover", changeCard2);
-
-let card3 = document.querySelector(".border3");
-
-function changeCard3() {
- card3.style.width = "75rem";
- card3.style.height= "20rem";
-}
-
-card3.addEventListener("mouseover", changeCard3);
