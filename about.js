@@ -1,9 +1,10 @@
+
 // Change Lambda School text size on mouseover
 
 let lambda = document.querySelector(".lambda");
 
 function changeText() {
-  lambda.style.fontSize = "x-large";
+  lambda.style.fontSize = "large";
 }
 
 lambda.addEventListener("mouseover", changeText);
@@ -35,3 +36,4 @@ function changeColor3() {
 }
 
 meetTeam.addEventListener("mouseover", changeColor3);
+
