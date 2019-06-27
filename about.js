@@ -1,4 +1,16 @@
-// Change color of header when mouseover
+// Change Lambda School text size on mouseover
+
+let lambda = document.querySelector(".lambda");
+
+function changeText() {
+  lambda.style.fontSize = "x-large";
+}
+
+lambda.addEventListener("mouseover", changeText);
+
+
+
+// Change color of header on mouseover
 
 let mission = document.querySelector("h3");
 
