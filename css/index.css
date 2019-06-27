@@ -222,21 +222,35 @@ h1 {
   }
 }
 /* Top Section */
-.topsection {
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+.section {
   position: relative;
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
+  text-shadow: 0 0 5px #000;
 }
-.topimage {
-  height: 20rem;
-  width: 100%;
-}
-.centered {
+.parallax::after {
+  content: " ";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+.bg2::after {
+  background-image: url(https://media3.giphy.com/media/1lRrsraIsEYRW/giphy.gif);
 }
 /* Buttons for top section and footer */
 button {
