@@ -10,6 +10,7 @@ buttons.forEach(button => {
     changeButton(button);
   });
 });
+
 // Change headers color on mouseover
 
 let headers = document.querySelectorAll(".sectionheader");
@@ -22,6 +23,7 @@ headers.forEach(header => {
     changeHeader(header);
   });
 });
+
 // Highlight text on mouseover
 
 let highlights = document.querySelectorAll("strong");
