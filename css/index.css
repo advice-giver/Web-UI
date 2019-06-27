@@ -247,7 +247,8 @@ i {
 }
 /* For 2nd, 3rd, and 4th section */
 .sectionheader {
-  font-size: 1.7rem;
+  font-family: Helvetica;
+  font-size: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
