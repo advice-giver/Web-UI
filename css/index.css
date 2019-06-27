@@ -51,6 +51,8 @@
 h3 {
   display: flex;
   justify-content: center;
+  font-family: "arial black";
+  font-size: 1.1rem;
 }
 .lambda {
   text-decoration: none;
@@ -72,7 +74,6 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
   padding-top: 3%;
-  width: 100%;
 }
 @media (max-width: 500px) {
   .teamflex {
@@ -123,11 +124,17 @@ h4 {
   font-size: 1.5rem;
 }
 .font {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+h1 {
+  font-family: "arial black";
 }
 /* Mobile Variable */
 /*Tablet Variable */
 /* Color Variable */
+/* Start of Landing Page */
+/* */
+/* */
 /* Header and NavBar */
 .header {
   display: flex;
@@ -211,6 +218,9 @@ button {
   font-size: 14px;
 }
 /* 2nd Section */
+#worksheader {
+  padding-bottom: 3.5%;
+}
 .section2 {
   width: 100%;
   display: flex;
@@ -262,6 +272,8 @@ i {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: "arial black";
+  padding-bottom: 2%;
 }
 .img {
   height: 6rem;
