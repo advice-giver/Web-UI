@@ -38,7 +38,7 @@
   }
 
   @media @tablet {
-    padding-bottom: 3%;
+    padding-bottom: 4%;
   }
 }
 
@@ -73,8 +73,21 @@ h3 {
   width: 12rem;
   box-shadow: 8px 8px 4px grey;
 
+  
+
   @media @mobile {
     box-shadow: none;
+  }
+
+  @media @tablet {
+ 
+    width: 7rem;
+    height: 10rem;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 
@@ -92,9 +105,11 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    margin-left: 3;
+    margin-left: 3%;
     margin-right: 3%;
   }
+
+ 
 }
 
 .person {
@@ -139,10 +154,27 @@ p {
 
 h4 {
   font-size: 1.5rem;
+
+  @media @tablet {
+    font-size: 1.2rem;
+  }
+  @media @mobile {
+    font-size: 1.4rem;
+  }
+
 }
 
 .font {
   font-size: 1.1rem;
+
+  @media @tablet {
+    font-size: .9rem;
+  }
+
+  @media @mobile {
+    font-size: 1.2rem;
+  }
+
 }
 
 h1 {
