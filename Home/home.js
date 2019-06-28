@@ -1,39 +1,60 @@
 // Change button colors on mouseover
 
 let buttons = document.querySelectorAll("button");
-function changeButton(button) {
-  button.style.color = "yellow";
+function changeButton(button, color) {
+  button.style.color = `${color}`; 
 }
 
 buttons.forEach(button => {
   button.addEventListener("mouseover", () => {
-    changeButton(button);
+    changeButton(button, "yellow");
   });
+
+    button.addEventListener("mouseleave", () => { 
+    changeButton(button, "#33cccc"); 
+  })
+    
 });
+
 
 // Change headers color on mouseover
 
 let headers = document.querySelectorAll(".sectionheader");
-function changeHeader(header) {
-  header.style.color = "darkred";
+function changeHeader(header, color) {
+  header.style.color = `${color}`; 
 }
 
 headers.forEach(header => {
   header.addEventListener("mouseover", () => {
-    changeHeader(header);
+    changeHeader(header, "darkred");
   });
+
+  header.addEventListener("mouseleave", () => { 
+    changeHeader(header, "black"); 
+  })
+    
 });
+
 
 // Highlight text on mouseover
 
+
+
+
 let highlights = document.querySelectorAll("strong");
-function changeColor(highlight) {
-  highlight.style.backgroundColor = "yellow";
+function changeColor(highlight, color) {
+  highlight.style.color = `${color}`; 
 }
+
 highlights.forEach(highlight => {
   highlight.addEventListener("mouseover", () => {
-    changeColor(highlight);
+    changeColor(highlight, "darkred");
   });
+
+  highlight.addEventListener("mouseleave", () => { 
+    changeColor(highlight, "black"); 
+  })
+    
 });
 
 

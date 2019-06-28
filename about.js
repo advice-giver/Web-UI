@@ -35,3 +35,36 @@ teamNames.forEach(personName => {
     changeTeamName(personName);
   });
 });
+
+
+//Dropdown component 
+
+class Dropdown {
+  constructor(element) {
+    
+    
+    this.element = element;
+    
+ 
+    
+   
+    this.button = this.element.querySelector('.dropdown-button');
+
+    
+    this.content = this.element.querySelector('.dropdown-content');
+
+   
+    
+    this.button.addEventListener('mouseover', () => {
+      this.toggleContent();
+    })
+  }
+
+  toggleContent() {
+
+    this.content.classList.toggle('dropdown-hidden');
+  }
+}
+
+let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
+
