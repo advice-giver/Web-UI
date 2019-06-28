@@ -17,20 +17,87 @@
 //
 //
 
-/* Header alignment */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Start of Dropdown Tabs */
 
-.header {
+
+/* Dropdown box itself */
+.dropdown {
+  z-index: 2;
+  position: absolute;
+  left: 25px;
+  cursor: pointer;
+}
+
+/* Dropdown button inside box */
+.dropdown .dropdown-button {
+  padding: 1rem;
+  border: 3px solid white;
+  color:  #33cccc;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Dropdown button hover */
+.dropdown .dropdown-button:hover {
+  background-color: white;
+}
+
+/* Dropdown tab box */
+.dropdown .dropdown-content {
+  width: 100%;
+  position: absolute;
+  background-color: white;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  border: 2.5px solid black;
+}
+
+
+/* Dropdown tabs themselves */
+.dropdown .dropdown-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+/* Dropdown tabs themselves hover */
+.dropdown .dropdown-link:hover {
+  color: #33cccc;
+  background-color: black;
+}
+
+.dropdown .dropdown-hidden {
+  display: none;
+}
+
+
+// Entire header bar 
+.header-container {
+  width: 100%;
+  height: 9rem;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: black;
-
-  @media @mobile {
-    display: flex;
-    flex-direction: column;
-  }
 }
+
+
+.header-container .header {
+  height: 100%;
+}
+
 
 /* Advice Giver logo size */
 
@@ -312,3 +379,10 @@ footer {
 .footerclass {
   font-size: 1.5rem;
 }
+
+
+
+
+
+
+
