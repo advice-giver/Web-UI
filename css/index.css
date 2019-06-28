@@ -153,6 +153,9 @@ h4 {
     font-size: 1.2rem;
   }
 }
+i.fab {
+  border: 1px solid white;
+}
 /* Mobile Variable */
 /*Tablet Variable */
 /* Color Variable */
