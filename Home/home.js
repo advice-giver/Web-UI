@@ -35,3 +35,5 @@ highlights.forEach(highlight => {
     changeColor(highlight);
   });
 });
+
+
