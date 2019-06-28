@@ -2,6 +2,12 @@
 #aboutus {
   font-size: 3rem;
 }
+h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "arial black";
+  font-size: 1.1rem;
+}
 .missionsection {
   background-color: #e6fff2;
   display: flex;
@@ -38,6 +44,9 @@
     padding-bottom: 4%;
   }
 }
+h1 {
+  font-family: "arial black";
+}
 .teamparagraph {
   margin-left: 5%;
   margin-right: 5%;
@@ -47,12 +56,6 @@
   display: flex;
   justify-content: center;
   padding-top: 1%;
-}
-h3 {
-  display: flex;
-  justify-content: center;
-  font-family: "arial black";
-  font-size: 1.1rem;
 }
 .lambda {
   text-decoration: none;
@@ -113,12 +116,6 @@ h3 {
     padding-bottom: 2%;
   }
 }
-i.fab {
-  border: 1px solid white;
-}
-p {
-  font-size: 1rem;
-}
 .personrole {
   width: 100%;
 }
@@ -156,16 +153,11 @@ h4 {
     font-size: 1.2rem;
   }
 }
-h1 {
-  font-family: "arial black";
-}
 /* Mobile Variable */
 /*Tablet Variable */
 /* Color Variable */
 /* Start of Landing Page */
-/* */
-/* */
-/* Header and NavBar */
+/* Header alignment */
 .header {
   display: flex;
   flex-direction: row;
@@ -179,7 +171,7 @@ h1 {
     flex-direction: column;
   }
 }
-/* Advice Giver logo */
+/* Advice Giver logo size */
 .adviceheader {
   height: 10rem;
   width: 10rem;
@@ -272,6 +264,22 @@ button {
   width: 15rem;
   height: 15rem;
 }
+#pad {
+  padding-bottom: 5%;
+}
+@media (max-width: 500px) {
+  #pad {
+    padding-bottom: 0%;
+  }
+}
+#pad2 {
+  padding-bottom: 10%;
+}
+@media (max-width: 500px) {
+  #pad2 {
+    padding-bottom: 0%;
+  }
+}
 /* Arrows in 2nd section */
 i {
   border: solid black;
@@ -288,12 +296,6 @@ i {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
-}
-.arrow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 /* For 2nd, 3rd, and 4th section */
 .sectionheader {
@@ -322,35 +324,6 @@ i {
   margin-left: 5%;
   margin-right: 5%;
 }
-#border {
-  border: 1px solid black;
-  padding-bottom: 3%;
-  margin-left: 3%;
-  margin-right: 3%;
-  background-color: white;
-}
-@media (max-width: 500px) {
-  #border {
-    margin-top: 3%;
-    margin-bottom: 3%;
-  }
-}
-#pad {
-  padding-bottom: 5%;
-}
-@media (max-width: 500px) {
-  #pad {
-    padding-bottom: 0%;
-  }
-}
-#pad2 {
-  padding-bottom: 10%;
-}
-@media (max-width: 500px) {
-  #pad2 {
-    padding-bottom: 0%;
-  }
-}
 /* Header for 3rd and 4th section */
 .whyuseheader {
   display: flex;
@@ -371,6 +344,19 @@ i {
 /*  3rd section - Why Use Advice Giver */
 .thirdsection {
   background-color: #e6fff2;
+}
+#border {
+  border: 1px solid black;
+  padding-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color: white;
+}
+@media (max-width: 500px) {
+  #border {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
 }
 /*  4th section - How Weve Helped */
 #textborder {

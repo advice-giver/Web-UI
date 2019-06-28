@@ -14,10 +14,10 @@
 @lightgreen: #e6fff2;
 
 /* Start of Landing Page */
-/* */
-/* */
+//
+//
 
-/* Header and NavBar */
+/* Header alignment */
 
 .header {
   display: flex;
@@ -32,7 +32,8 @@
   }
 }
 
-/* Advice Giver logo */
+/* Advice Giver logo size */
+
 .adviceheader {
   height: 10rem;
   width: 10rem;
@@ -43,10 +44,11 @@
   }
 }
 
+// Nav tabs alignment
+
 .nav-item {
   text-decoration: none;
   color: white;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -62,6 +64,8 @@
   }
 }
 
+// Navbar alignment
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -76,35 +80,32 @@
   }
 }
 
-
 /* Top Section */
+
+// Top section alignment and text color
 
 .topsection {
   position: relative;
   text-align: center;
   color: white;
- }
- 
- .topimage {
+}
+
+// Background image size
+
+.topimage {
   height: 25rem;
   width: 100%;
-  
- }
- 
- .centered {
+}
+
+// Centering text and getting it in front of background image
+
+.centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
- }
- 
-
-
-
-
-
-
+}
 
 /* Buttons for top section and footer */
 button {
@@ -118,10 +119,13 @@ button {
 
 /* 2nd Section */
 
+// Header padding
+
 #worksheader {
   padding-bottom: 3.5%;
-
 }
+
+// Section alignment
 
 .section2 {
   width: 100%;
@@ -130,11 +134,15 @@ button {
   justify-content: space-evenly;
   align-items: center;
 
+  // Turning into column on mobile
+
   @media @mobile {
     display: flex;
     flex-direction: column;
   }
 }
+
+// Alignment for each individual step
 
 .group {
   display: flex;
@@ -145,80 +153,7 @@ button {
   height: 15rem;
 }
 
-/* Arrows in 2nd section */
-
-i {
-  border: solid black;
-  border-width: 0rem 0.5rem 0.5rem 0rem;
-  display: inline-block;
-  padding: 0.3rem;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-
-  @media @mobile {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
-}
-
-.arrow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-/* For 2nd, 3rd, and 4th section */
-
-.sectionheader {
-  font-size: 1.7rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: "arial black";
-  padding-bottom: 2%;
- 
-  
-}
-
-.img {
-  height: 6rem;
-  width: 6rem;
-
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
-
-  border-radius: 50%;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.whyuse {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-#border {
-  border: 1px solid black;
-  padding-bottom: 3%;
-  margin-left: 3%;
-  margin-right: 3%;
-  background-color: white;
-
-  @media @mobile {
-    margin-top: 3%;
-    margin-bottom: 3%;
-  }
-}
+// Padding for each step in flow chart
 
 #pad {
   padding-bottom: 5%;
@@ -235,6 +170,73 @@ i {
   }
 }
 
+/* Arrows in 2nd section */
+
+// Creating arrow
+
+i {
+  border: solid black;
+  border-width: 0rem 0.5rem 0.5rem 0rem;
+  display: inline-block;
+  padding: 0.3rem;
+}
+
+// Making arrow turn right
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+
+  // Making arrow go down on mobile
+
+  @media @mobile {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+/* For 2nd, 3rd, and 4th section */
+
+// Headers for each section
+
+.sectionheader {
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "arial black";
+  padding-bottom: 2%;
+}
+
+// Image sizes and positioning for each section
+
+.img {
+  height: 6rem;
+  width: 6rem;
+
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+
+  border-radius: 50%;
+}
+
+// Column alignment for each indivual item in each section
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// Margins for each section
+
+.whyuse {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 /* Header for 3rd and 4th section */
 
 .whyuseheader {
@@ -246,6 +248,8 @@ i {
 
   width: 100%;
 
+  // Headers turn vertical on mobile
+
   @media @mobile {
     display: flex;
     flex-direction: column;
@@ -256,8 +260,25 @@ i {
 
 /*  3rd section - Why Use Advice Giver */
 
+//Background color
+
 .thirdsection {
   background-color: @lightgreen;
+}
+
+// Creating cards
+
+#border {
+  border: 1px solid black;
+  padding-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color: white;
+
+  @media @mobile {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
 }
 
 /*  4th section - How Weve Helped */
