@@ -1,0 +1,210 @@
+// --- Top Section
+
+// About Us text size
+#aboutus {
+  font-size: 3rem;
+}
+
+// --- Second Section - Mission
+
+// Mission headers alignment and font
+
+h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "arial black";
+  font-size: 1.1rem;
+}
+//  Mission cards alignment
+
+.missionsection {
+  background-color: @lightgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid black;
+
+  // Making cards vertical on mobile
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+// Turning mission text into cards
+
+.missionstatement {
+  width: 20rem;
+  height: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  background-color: white;
+  border: 1px solid black;
+
+  padding-left: 2%;
+  padding-right: 2%;
+
+  // Vertical card spacing on mobile
+
+  @media @mobile {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media @tablet {
+    padding-bottom: 4%;
+  }
+}
+
+// --- Third Section - Team
+
+// Meet the Team header font
+
+h1 {
+  font-family: "arial black";
+}
+
+// Team paragraph alignment
+
+.teamparagraph {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+// Team Header alignment
+
+.teamheader {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+}
+
+// Making 'Lambda School' text not look like a link
+
+.lambda {
+  text-decoration: none;
+  color: black;
+}
+
+// --- Third Section - Team Images
+
+// Adjusting team photo sizes and box shadow
+
+.teampic {
+  height: 12rem;
+  width: 12rem;
+  box-shadow: 8px 8px 4px grey;
+
+  @media @mobile {
+    box-shadow: none;
+  }
+
+  // Adjusting team photo sizes to fit better on tablet view
+
+  @media @tablet {
+    width: 7rem;
+    height: 10rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+// Turning photos into 2 rows and aligning
+
+.teamflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding-top: 3%;
+
+  // Turning photos into 1 column on mobile and aligning
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+// Aligning content for each individual person (photo, name, role) into column
+
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  // Changing alignment on mobile - images on left, text on right
+
+  @media @mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+}
+
+.personrole {
+  width: 100%;
+
+  // Changing alignment for each persons content on mobile
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+// Person's name text size on different screen sizes
+
+h4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+
+  @media @tablet {
+    font-size: 1.2rem;
+  }
+  @media @mobile {
+    font-size: 1.4rem;
+  }
+}
+
+// Person's role text size on different screen sizes
+
+.font {
+  font-size: 1.1rem;
+
+  @media @tablet {
+    font-size: 0.9rem;
+  }
+
+  @media @mobile {
+    font-size: 1.2rem;
+  }
+}
+// Adding white border to fix github icon border issue 
+
+i.fab {
+  border: 1px solid white;
+
+}

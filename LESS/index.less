@@ -1,0 +1,388 @@
+/* Imported About LESS */
+@import "./about.less";
+
+/* Mobile Variable */
+
+@mobile: ~"(max-width: 500px)";
+
+/*Tablet Variable */
+
+@tablet: ~"(max-width: 700px)";
+
+/* Color Variable */
+
+@lightgreen: #e6fff2;
+
+/* Start of Landing Page */
+//
+//
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Start of Dropdown Tabs */
+
+
+/* Dropdown box itself */
+.dropdown {
+  z-index: 2;
+  position: absolute;
+  left: 25px;
+  cursor: pointer;
+}
+
+/* Dropdown button inside box */
+.dropdown .dropdown-button {
+  padding: 1rem;
+  border: 3px solid white;
+  color:  #33cccc;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Dropdown button hover */
+.dropdown .dropdown-button:hover {
+  background-color: white;
+}
+
+/* Dropdown tab box */
+.dropdown .dropdown-content {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  border: 2.5px solid black;
+}
+
+
+/* Dropdown tabs themselves */
+.dropdown .dropdown-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+/* Dropdown tabs themselves hover */
+.dropdown .dropdown-link:hover {
+  color: #33cccc;
+  background-color: black;
+}
+
+.dropdown .dropdown-hidden {
+  display: none;
+}
+
+
+// Entire header bar 
+.header-container {
+  width: 100%;
+  height: 9rem;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+
+.header-container .header {
+  height: 100%;
+}
+
+
+/* Advice Giver logo size */
+
+.adviceheader {
+  height: 10rem;
+  width: 10rem;
+
+  @media @mobile {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+
+// Nav tabs alignment
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  margin: 60%;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10%;
+  }
+}
+
+// Navbar alignment
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3%;
+  }
+}
+
+/* Top Section */
+
+// Top section alignment and text color
+
+.topsection {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+// Background image size
+
+.topimage {
+  height: 25rem;
+  width: 100%;
+}
+
+// Centering text and getting it in front of background image
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+/* Buttons for top section and footer */
+button {
+  border: 1px solid white;
+  height: 2rem;
+  width: 10rem;
+  color: #33cccc;
+  background-color: black;
+  font-size: 14px;
+}
+
+/* 2nd Section */
+
+// Header padding
+
+#worksheader {
+  padding-bottom: 3.5%;
+}
+
+// Section alignment
+
+.section2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  // Turning into column on mobile
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Alignment for each individual step
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 15rem;
+}
+
+// Padding for each step in flow chart
+
+#pad {
+  padding-bottom: 5%;
+
+  @media @mobile {
+    padding-bottom: 0%;
+  }
+}
+
+#pad2 {
+  padding-bottom: 10%;
+  @media @mobile {
+    padding-bottom: 0%;
+  }
+}
+
+/* Arrows in 2nd section */
+
+// Creating arrow
+
+i {
+  border: solid black;
+  border-width: 0rem 0.5rem 0.5rem 0rem;
+  display: inline-block;
+  padding: 0.3rem;
+}
+
+// Making arrow turn right
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+
+  // Making arrow go down on mobile
+
+  @media @mobile {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+/* For 2nd, 3rd, and 4th section */
+
+// Headers for each section
+
+.sectionheader {
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "arial black";
+  padding-bottom: 2%;
+}
+
+// Image sizes and positioning for each section
+
+.img {
+  height: 6rem;
+  width: 6rem;
+
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+
+  border-radius: 50%;
+}
+
+// Column alignment for each indivual item in each section
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// Margins for each section
+
+.whyuse {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Header for 3rd and 4th section */
+
+.whyuseheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3%;
+
+  width: 100%;
+
+  // Headers turn vertical on mobile
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+/*  3rd section - Why Use Advice Giver */
+
+//Background color
+
+.thirdsection {
+  background-color: @lightgreen;
+}
+
+// Creating cards
+
+#border {
+  border: 1px solid black;
+  padding-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color: white;
+
+  @media @mobile {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+}
+
+/*  4th section - How Weve Helped */
+
+#textborder {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #fff2e6;
+  width: 50%;
+}
+
+#circlepic {
+  height: 8rem;
+  width: auto;
+}
+
+/* Footer section */
+
+footer {
+  border-top: 1px solid black;
+  background-color: @lightgreen;
+}
+
+.footerdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerclass {
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
